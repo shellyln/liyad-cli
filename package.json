@@ -1,0 +1,44 @@
+{
+  "name": "liyad-cli",
+  "version": "0.0.1",
+  "description": "CLI and REPL for Liyad (Lisp yet another DSL interpreter).",
+  "keywords": [
+    "LISP",
+    "REPL",
+    "CLI",
+    "interpreter",
+    "S-expression",
+    "DSL",
+    "JSX",
+    "LSX",
+    "parser"
+  ],
+  "bin": {
+    "liyad": "index.js"
+  },
+  "main": "index.js",
+  "scripts": {
+    "build": "echo \"no build specified\"",
+    "clean": "echo \"no clean specified\"",
+    "lint": "eslint index.js lib/**/*.js",
+    "test": "bash test.sh",
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": ">=10.0"
+  },
+  "pkg": {
+    "targets": [
+      "node10"
+    ]
+  },
+  "dependencies": {
+    "liyad": "^0.0.15"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shellyln/liyad-cli.git"
+  },
+  "author": "shellyln",
+  "license": "ISC"
+}
