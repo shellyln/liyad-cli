@@ -2,6 +2,12 @@
 ### CLI and REPL for [Liyad](https://github.com/shellyln/liyad) (Lisp yet another DSL interpreter).
 
 
+[![npm](https://img.shields.io/npm/v/liyad-cli.svg)](https://www.npmjs.com/package/liyad-cli)
+[![GitHub release](https://img.shields.io/github/release/shellyln/liyad-cli.svg)](https://github.com/shellyln/liyad-cli/releases)
+[![Travis](https://img.shields.io/travis/shellyln/liyad-cli/master.svg)](https://travis-ci.org/shellyln/liyad-cli)
+[![GitHub forks](https://img.shields.io/github/forks/shellyln/liyad-cli.svg?style=social&label=Fork)](https://github.com/shellyln/liyad-cli/fork)
+[![GitHub stars](https://img.shields.io/github/stars/shellyln/liyad-cli.svg?style=social&label=Star)](https://github.com/shellyln/liyad-cli)
+
 ----
 
 ## Requirements
@@ -12,7 +18,7 @@
 
 ```bash
 $ npm install -g liyad-cli
-$ liyad
+$ liyad --version
 ```
 
 ## CLI Usage
@@ -35,8 +41,10 @@ Use [pkg](https://www.npmjs.com/package/pkg).
 
 ```bash
 $ npm install -g pkg
+$ git clone https://github.com/shellyln/liyad-cli.git
+$ cd liyad-cli
 $ pkg . --output liyad
-$ ./liyad
+$ ./liyad --version
 ```
 
 ----
