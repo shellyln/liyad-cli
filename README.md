@@ -1,6 +1,7 @@
 # Liyad CLI
 ### CLI and REPL for [Liyad](https://github.com/shellyln/liyad) (Lisp yet another DSL interpreter).
 
+[![Liyad](https://shellyln.github.io/assets/image/liyad-logo.svg)](https://shellyln.github.io/liyad/)
 
 [![npm](https://img.shields.io/npm/v/liyad-cli.svg)](https://www.npmjs.com/package/liyad-cli)
 [![GitHub release](https://img.shields.io/github/release/shellyln/liyad-cli.svg)](https://github.com/shellyln/liyad-cli/releases)
@@ -30,6 +31,12 @@ Usage: liyad [options] [ -- ] [ -e script | script.lisp | - ] [ -- ] [arguments]
 Options:
   -                     script read from stdin (default; interactive mode if a tty)
   --                    indicate the end of CLI options / script files
+  -p, --profile=...     select interpreter profile
+                          S                   S-expression parser
+                          L, lisp (default)   lisp interpreter (return single value)
+                          LM                  lisp interpreter (return multiple values)
+                          L_async, lisp_async lisp interpreter (return single value, enable async)
+                          LM_async            lisp interpreter (return multiple values, enable async)
   -e, --eval=...        evaluate script
   -i, --interactive     always enter the REPL even if stdin does not appear to be a terminal
   -h, --help            print command line options
