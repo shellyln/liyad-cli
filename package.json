@@ -33,7 +33,7 @@
     ]
   },
   "dependencies": {
-    "liyad": "^0.0.15"
+    "liyad": "^0.0.18"
   },
   "repository": {
     "type": "git",
