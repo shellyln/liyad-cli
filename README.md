@@ -37,6 +37,7 @@ Options:
                           LM                  lisp interpreter (return multiple values)
                           L_async, lisp_async lisp interpreter (return single value, enable async)
                           LM_async            lisp interpreter (return multiple values, enable async)
+  --safe                run as safe mode (disable '$require' and '$node-require')
   -e, --eval=...        evaluate script
   -i, --interactive     always enter the REPL even if stdin does not appear to be a terminal
   -h, --help            print command line options
