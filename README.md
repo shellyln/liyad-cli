@@ -42,6 +42,7 @@ Options:
   -i, --interactive     always enter the REPL even if stdin does not appear to be a terminal
   -h, --help            print command line options
   -v, --version         print version informations
+  --cli-version         print cli version informations
 ```
 
 ## Packaging to the single executable file.
