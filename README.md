@@ -100,6 +100,17 @@ $ liyad app.lisp
 start server
 ```
 
+## Additional operators and constants
+
+* `$require(id)`
+    * Load lisp code from other file.
+    * returns: Exported functions and variables.
+    * `id`: Load from relative path if `id` starts with `./` or `../`. Otherwise load from local or global `node_modules`.
+* `$node-require(id)`
+    * Load JavaScript code from other file.
+    * returns: Exported functions and variables.
+    * `id`: Load from relative path if `id` starts with `./` or `../`. Otherwise load from local or global `node_modules`.
+
 ----
 
 ## License
