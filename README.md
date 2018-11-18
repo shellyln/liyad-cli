@@ -37,6 +37,9 @@ Options:
                           LM                  lisp interpreter (return multiple values)
                           L_async, lisp_async lisp interpreter (return single value, enable async)
                           LM_async            lisp interpreter (return multiple values, enable async)
+                          LSX                 lisp interpreter (return single value, enable LSX)
+                          LSX_async           lisp interpreter (return single value, enable LSX, enable async)
+  --lsx-boot            LSX bootstrap JavaScript file; required if profile LSX or LSX_async is selected.
   --safe                run as safe mode (disable '$require' and '$node-require')
   -e, --eval=...        evaluate script
   -i, --interactive     always enter the REPL even if stdin does not appear to be a terminal
@@ -44,6 +47,30 @@ Options:
   -v, --version         print version informations
   --cli-version         print cli version informations
 ```
+
+## LSX bootstrap file example
+
+lsxboot.js
+```javascript
+const React = require('react');
+const ReactDOMServer = require('react-dom/server');
+
+
+class Hello extends React.Component {
+    render() {
+        return (React.createElement("div", {}, "hello"));
+    }
+}
+
+
+exports.dom = React.createElement;
+exports.flagment = React.Fragment;
+exports.render = ReactDOMServer.renderToStaticMarkup;
+exports.components = {
+    Hello,
+};
+```
+
 
 ## Packaging to the single executable file.
 Use [pkg](https://www.npmjs.com/package/pkg).
@@ -102,10 +129,12 @@ start server
 
 ## Additional operators and constants
 
-* `$require(id)`
+* `$require(id [, profile])`
     * Load lisp code from other file.
     * returns: Exported functions and variables.
     * `id`: Load from relative path if `id` starts with `./` or `../`. Otherwise load from local or global `node_modules`.
+    * `profile`: (optional) interpreter profile (S/L/lisp/LM/L_async/lisp_async/LM_async).
+        * default value is selected by CLI option `-p` or `--profile`.
 * `$node-require(id)`
     * Load JavaScript code from other file.
     * returns: Exported functions and variables.
