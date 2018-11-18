@@ -40,5 +40,6 @@
     "url": "https://github.com/shellyln/liyad-cli.git"
   },
   "author": "shellyln",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {}
 }

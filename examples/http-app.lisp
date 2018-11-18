@@ -1,4 +1,6 @@
 
+($console-error ($concat "file: " $__filename))
+
 ($let url ($node-require "url"))
 ($let srv ($require "./http-srv"))
 
