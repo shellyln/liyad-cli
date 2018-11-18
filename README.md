@@ -39,7 +39,7 @@ Options:
                           LM_async            lisp interpreter (return multiple values, enable async)
                           LSX                 lisp interpreter (return single value, enable LSX)
                           LSX_async           lisp interpreter (return single value, enable LSX, enable async)
-  --lsx-boot            LSX bootstrap JavaScript file; required if profile LSX or LSX_async is selected.
+  --lsx-boot lsxboot.js LSX bootstrap JavaScript file; required if profile LSX or LSX_async is selected.
   --safe                run as safe mode (disable '$require' and '$node-require')
   -e, --eval=...        evaluate script
   -i, --interactive     always enter the REPL even if stdin does not appear to be a terminal
