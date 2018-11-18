@@ -1,3 +1,7 @@
+
+
+; ($console-error ($concat "Test case file: " $__filename))
+
 ($local ()
     ($let fac-sub (-> (n a)
         ;; ($pause)
@@ -10,7 +14,7 @@
     ($capture (fac-sub)
         ($defun fac (n) (fac-sub n 1)) ))
 
-; ($require "./example2")
+
 ($concat "Hello, " (fac 5) "!")
 ($concat "Hello, " (fac 5) "!")
 ($concat "Hello, " (fac 5) "!")

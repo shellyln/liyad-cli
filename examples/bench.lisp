@@ -1,12 +1,11 @@
 
-($console-error ($concat "Hello, " $__filename))
 
 ($$defun tarai(x y z)
     ($if (<= x y)
         y
         ($self ($self (- x 1) y z)
                ($self (- y 1) z x)
-               ($self (- z 1) x y))))
+               ($self (- z 1) x y) )))
 
 ($local ()
     ($let fib-sub (=> (n a b)
@@ -28,9 +27,9 @@
     ($capture (fac-sub)
         ($$defun fac (n) (fac-sub n 1)) ))
 
+
 ;; exports
 (#
     (tarai (<- tarai))
-    (fib (<- fib))
-    (fac (<- fac))
-)
+    (fib   (<- fib  ))
+    (fac   (<- fac  )) )

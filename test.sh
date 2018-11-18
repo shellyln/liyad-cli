@@ -17,7 +17,7 @@ echo 'test inline eval options'
 [[ $(node index.js -e '($concat "a" "b")') = 'ab' ]] || (echo 'failed' && false)
 
 echo 'test load scripts from file'
-[[ $(node index.js examples/example.lisp) = 'Hello, 120!' ]] || (echo 'failed' && false)
+[[ $(node index.js tests/case-0001.lisp) = 'Hello, 120!' ]] || (echo 'failed' && false)
 
 
 echo 'All done!'
