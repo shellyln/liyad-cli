@@ -84,7 +84,7 @@ $ ./liyad --version
 ```
 
 ## Packaging and publish your codes as the NPM module.
-See [liyad-lisp-pkg-example](https://github.com/shellyln/liyad-lisp-pkg-example)
+See [liyad-lisp-pkg-example](https://github.com/shellyln/liyad-lisp-pkg-example) and [liyad-webapp-example](https://github.com/shellyln/liyad-webapp-example)
 
 ### Usage of package:
 
@@ -139,6 +139,13 @@ start server
     * Load JavaScript code from other file.
     * returns: Exported functions and variables.
     * `id`: Load from relative path if `id` starts with `./` or `../`. Otherwise load from local or global `node_modules`.
+* `$render(jsxElement, callback)`
+    * Render jsxElement by `LSX-bootstrap.render()` and pass rendering result string or error to `callback`.
+    * returns: `undefined`
+    * `jsxElement`: object returned by `LSX-bootstrap.dom()`.
+    * `callback(error, html)`: callback function called on end of rendering `jsxElement`.
+        * `error`: not null if error is occured.
+        * `html`: rendering result html; null if error is occured.
 
 ----
 
