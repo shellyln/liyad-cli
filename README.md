@@ -79,6 +79,7 @@ Use [pkg](https://www.npmjs.com/package/pkg).
 $ npm install -g pkg
 $ git clone https://github.com/shellyln/liyad-cli.git
 $ cd liyad-cli
+$ npm ci
 $ pkg . --output liyad
 $ ./liyad --version
 ```
@@ -129,23 +130,29 @@ start server
 
 ## Additional operators and constants
 
-* `$require(id [, profile])`
+* `($require id [ profile ])`
     * Load lisp code from other file.
     * returns: Exported functions and variables.
     * `id`: Load from relative path if `id` starts with `./` or `../`. Otherwise load from local or global `node_modules`.
     * `profile`: (optional) interpreter profile (S/L/lisp/LM/L_async/lisp_async/LM_async).
         * default value is selected by CLI option `-p` or `--profile`.
-* `$node-require(id)`
+* `($node-require id)`
     * Load JavaScript code from other file.
     * returns: Exported functions and variables.
     * `id`: Load from relative path if `id` starts with `./` or `../`. Otherwise load from local or global `node_modules`.
-* `$render(jsxElement, callback)`
+* `($render jsxElement callback)`
     * Render jsxElement by `LSX-bootstrap.render()` and pass rendering result string or error to `callback`.
     * returns: `undefined`
     * `jsxElement`: object returned by `LSX-bootstrap.dom()`.
     * `callback(error, html)`: callback function called on end of rendering `jsxElement`.
         * `error`: not null if error is occured.
         * `html`: rendering result html; null if error is occured.
+
+## Additional operator on REPL
+* `($pause(id [ cond ])`
+    * Pause execution and start debugger
+    * returns: `undefined`
+    * `cond`: if it present, pause if condition is `true`.
 
 ----
 
