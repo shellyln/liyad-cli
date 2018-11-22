@@ -128,18 +128,30 @@ $ liyad app.lisp
 start server
 ```
 
+
 ## Additional operators and constants
 
+### $exit
+* `($exit [ code ])`
+    * Exit the process.
+    * returns: never.
+    * `code`: exit code.
+
+### $require
 * `($require id [ profile ])`
     * Load lisp code from other file.
     * returns: Exported functions and variables.
     * `id`: Load from relative path if `id` starts with `./` or `../`. Otherwise load from local or global `node_modules`.
     * `profile`: (optional) interpreter profile (S/L/lisp/LM/L_async/lisp_async/LM_async).
         * default value is selected by CLI option `-p` or `--profile`.
+
+### $node-require
 * `($node-require id)`
     * Load JavaScript code from other file.
     * returns: Exported functions and variables.
     * `id`: Load from relative path if `id` starts with `./` or `../`. Otherwise load from local or global `node_modules`.
+
+### $render
 * `($render jsxElement callback)`
     * Render jsxElement by `LSX-bootstrap.render()` and pass rendering result string or error to `callback`.
     * returns: `undefined`
@@ -148,11 +160,15 @@ start server
         * `error`: not null if error is occured.
         * `html`: rendering result html; null if error is occured.
 
+
 ## Additional operator on REPL
-* `($pause(id [ cond ])`
+
+### $pause
+* `($pause id [ cond ])`
     * Pause execution and start debugger
     * returns: `undefined`
     * `cond`: if it present, pause if condition is `true`.
+
 
 ----
 

@@ -14,7 +14,7 @@
     "parser"
   ],
   "bin": {
-    "liyad": "index.js"
+    "liyad": "cli-main.js"
   },
   "main": "index.js",
   "scripts": {
