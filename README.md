@@ -170,6 +170,28 @@ start server
     * `cond`: if it present, pause if condition is `true`.
 
 
+## API
+
+### parseArgs
+* `parseArgs(args)`
+    * Parse CLI arguments.
+    * returns: config object.
+    * `args`: CLI arguments.
+* example: `parseArgs(['-p', 'LSX_async', '--lsx-boot', 'lsxboot.js', 'app.lisp'])`
+
+### cliCore
+* `cliCore(params)`
+    * Evaluate codes.
+    * returns: `undefined`
+    * `params`: config object.
+* example: `cliCore(parseArgs(process.argv.slice(2)))`
+
+### cli
+* `cli()`
+    * Run CLI.
+    * returns: `undefined`
+
+
 ----
 
 ## License
