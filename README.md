@@ -180,11 +180,12 @@ start server
 * example: `parseArgs(['-p', 'LSX_async', '--lsx-boot', 'lsxboot.js', 'app.lisp'])`
 
 ### cliCore
-* `cliCore(params)`
+* `cliCore(curDir, params)`
     * Evaluate codes.
     * returns: `undefined`
+    * `curDir`: current directory.
     * `params`: config object.
-* example: `cliCore(parseArgs(process.argv.slice(2)))`
+* example: `cliCore(fs.realpathSync(process.cwd()), parseArgs(process.argv.slice(2)))`
 
 ### cli
 * `cli()`
