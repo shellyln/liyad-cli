@@ -3,4 +3,9 @@
 // https://github.com/shellyln
 
 
-exports = require('./lib/cli');
+const x = require('./lib/cli');
+for (const m in x) {
+    if (Object.hasOwnProperty.call(x, m)) {
+        exports[m] = x[m];
+    }
+}
