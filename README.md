@@ -137,6 +137,20 @@ start server
     * returns: never.
     * `code`: exit code.
 
+### $shell
+* `($shell command)`
+    * Run command.
+    * returns: command output (stdout) string.
+    * `command`: command and arguments.
+        * example: `($shell "ls -al")`
+
+### $shell-async
+* `($shell-async command)`
+    * Run command asynchronously.
+    * returns: Promise object resolving command output (stdout) string.
+    * `command`: command and arguments.
+        * example: `($shell-async "ls -al")`
+
 ### $require
 * `($require id [ profile ])`
     * Load lisp code from other file.
