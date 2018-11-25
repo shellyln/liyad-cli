@@ -1,6 +1,6 @@
 {
   "name": "liyad-cli",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "description": "CLI and REPL for Liyad (Lisp yet another DSL interpreter).",
   "keywords": [
     "LISP",
