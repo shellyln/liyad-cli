@@ -33,13 +33,17 @@
     ]
   },
   "dependencies": {
-    "liyad": "^0.0.34"
+    "liyad": "^0.0.35"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/shellyln/liyad-cli.git"
   },
   "author": "shellyln",
+  "homepage": "https://shellyln.github.io/",
+  "bugs": {
+    "url": "https://github.com/shellyln/liyad-cli/issues"
+  },
   "license": "ISC",
   "devDependencies": {}
 }
