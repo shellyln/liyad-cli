@@ -1,6 +1,6 @@
 {
   "name": "liyad-cli",
-  "version": "0.0.30",
+  "version": "0.0.31",
   "description": "CLI and REPL for Liyad (Lisp yet another DSL interpreter).",
   "keywords": [
     "LISP",
@@ -33,8 +33,9 @@
     ]
   },
   "dependencies": {
-    "liyad": "^0.0.35"
+    "liyad": "^0.0.36"
   },
+  "devDependencies": {},
   "repository": {
     "type": "git",
     "url": "https://github.com/shellyln/liyad-cli.git"
@@ -44,6 +45,5 @@
   "bugs": {
     "url": "https://github.com/shellyln/liyad-cli/issues"
   },
-  "license": "ISC",
-  "devDependencies": {}
+  "license": "ISC"
 }
