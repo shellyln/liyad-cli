@@ -3,15 +3,16 @@
   "version": "0.0.44",
   "description": "CLI and REPL for Liyad (Lisp yet another DSL interpreter).",
   "keywords": [
-    "LISP",
+    "lisp",
     "REPL",
     "CLI",
     "interpreter",
+    "parser",
     "S-expression",
+    "Liyad",
     "DSL",
     "JSX",
-    "LSX",
-    "parser"
+    "LSX"
   ],
   "bin": {
     "liyad": "cli-main.js"
