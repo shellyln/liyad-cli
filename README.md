@@ -178,7 +178,7 @@ start server
 ## Additional operator on REPL
 
 ### $pause
-* `($pause id [ cond ])`
+* `($pause [ cond ])`
     * Pause execution and start debugger
     * returns: `undefined`
     * `cond`: if it present, pause if condition is `true`.
