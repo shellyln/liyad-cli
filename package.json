@@ -1,6 +1,6 @@
 {
   "name": "liyad-cli",
-  "version": "0.0.49",
+  "version": "0.1.0",
   "description": "CLI and REPL for Liyad (Lisp yet another DSL interpreter).",
   "keywords": [
     "lisp",
@@ -34,7 +34,7 @@
     ]
   },
   "dependencies": {
-    "liyad": "^0.0.54"
+    "liyad": "^0.1.0"
   },
   "devDependencies": {},
   "repository": {
