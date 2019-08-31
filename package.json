@@ -34,7 +34,7 @@
     ]
   },
   "dependencies": {
-    "liyad": "^0.1.0"
+    "liyad": "^0.2.2"
   },
   "devDependencies": {},
   "repository": {
